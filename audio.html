@@ -16,7 +16,7 @@ var languageFrom = document.getElementById("select1").value;
 var languageTo = document.getElementById("select2").value;
 var s = document.createElement('script');
 var accessTokenClean = '2DA9F718D103309B39A11F4BD0B56F4C6DC89EB9&';
-s.src = "http://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=mycallback&appId=" + accessTokenClean + "&from=" + languageFrom + "&to=" + languageTo + "&text=" + text;
+s.src = "https://api.microsofttranslator.com/V2/Ajax.svc/Translate?oncomplete=mycallback&appId=" + accessTokenClean + "&from=" + languageFrom + "&to=" + languageTo + "&text=" + text;
 
 document.getElementsByTagName('body')[0].appendChild(s);
 }
